@@ -3,7 +3,6 @@ module github.com/tokopedia/gripmock
 go 1.22
 
 require (
-	github.com/go-chi/chi v4.1.2+incompatible
 	github.com/go-chi/chi/v5 v5.0.12
 	github.com/golang/protobuf v1.5.4
 	github.com/lithammer/fuzzysearch v1.1.8
