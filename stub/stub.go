@@ -3,13 +3,14 @@ package stub
 import (
 	"encoding/json"
 	"fmt"
-	"google.golang.org/grpc/codes"
 	"io/ioutil"
 	"log"
 	"net/http"
 	"strings"
 
-	"github.com/go-chi/chi"
+	"google.golang.org/grpc/codes"
+
+	"github.com/go-chi/chi/v5"
 )
 
 type Options struct {
