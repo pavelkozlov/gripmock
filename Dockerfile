@@ -1,9 +1,9 @@
-FROM golang:alpine3.17
+FROM golang:1.23.5-alpine3.21
 
 # install tools (bash, git, protobuf, protoc-gen-go, protoc-grn-go-grpc, pkger)
 RUN apk -U --no-cache add bash git protobuf &&\
-    go install -v github.com/golang/protobuf/protoc-gen-go@latest &&\
-    go install -v google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest &&\
+    go install google.golang.org/protobuf/cmd/protoc-gen-go@latest && \
+    go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest &&\
     go install github.com/markbates/pkger/cmd/pkger@latest
 
 # cloning well-known-types

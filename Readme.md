@@ -1,3 +1,5 @@
+[![Integration test](https://github.com/pavelkozlov/gripmock/actions/workflows/integration-test.yml/badge.svg?branch=master)](https://github.com/pavelkozlov/gripmock/actions/workflows/integration-test.yml)
+
 # GripMock
 GripMock is a **mock server** for **GRPC** services. It's using a `.proto` file to generate implementation of gRPC service for you.
 You can use gripmock for setting up end-to-end testing or as a dummy server in a software development phase.
